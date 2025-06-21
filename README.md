@@ -13,6 +13,25 @@ This project is a simple HTML/PHP-based form filling website deployed on an EC2 
 - **Server**: Apache (httpd)
 - **OS**: Amazon Linux 2 (EC2)
 
+-- Login to MySQL
+mysql -u root -p
+
+-- Create DB
+CREATE DATABASE formdb;
+
+-- Use it
+USE formdb;
+
+-- Create table
+CREATE TABLE submissions (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(100),
+    email VARCHAR(100),
+    message TEXT,
+    submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
 ---
 
 🧾 Sample:  Output
