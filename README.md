@@ -53,17 +53,8 @@ This is a simple, elegant form-filling web app built with **HTML, CSS, and PHP**
 
 ---
 
-## 🧾 Sample: `submit.php` Output
+## 🧾 Sample:  Output
 
-```php
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = htmlspecialchars($_POST['name']);
-    $email = htmlspecialchars($_POST['email']);
-    echo "<h2>Thank you for submitting your details!</h2>";
-    echo "<p>Name: $name</p>";
-    echo "<p>Email: $email</p>";
-} else {
-    echo "<p>No data submitted.</p>";
-}
-?>
+![image](https://github.com/user-attachments/assets/ad2cf4a4-ff5b-496a-a58f-9cf71d80c391)
+![image](https://github.com/user-attachments/assets/ecda51e2-1a15-46e2-ba54-d7d846b89893)
+
