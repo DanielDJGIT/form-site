@@ -1,3 +1,4 @@
 #!/bin/bash
 yum update -y
-yum install -y httpd php mariadb
+yum install -y httpd php
+
