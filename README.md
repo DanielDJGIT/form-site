@@ -55,6 +55,7 @@ This is a simple, elegant form-filling web app built with **HTML, CSS, and PHP**
 
 ## 🧾 Sample:  Output
 
-![image](https://github.com/user-attachments/assets/ad2cf4a4-ff5b-496a-a58f-9cf71d80c391)
+
 ![image](https://github.com/user-attachments/assets/ecda51e2-1a15-46e2-ba54-d7d846b89893)
+![image](https://github.com/user-attachments/assets/ad2cf4a4-ff5b-496a-a58f-9cf71d80c391)
 
