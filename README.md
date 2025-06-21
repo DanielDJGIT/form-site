@@ -36,6 +36,51 @@ Visit: `http://<your-ec2-public-ip>/index.html`
 
 ## 📁 Folder Structure
 
+---
+
+## 💡 Setup & Deployment
+
+### 1. Prerequisites
+
+- AWS account
+- GitHub account
+- EC2 instance (Amazon Linux 2)
+- IAM roles:
+  - `EC2CodeDeployRole`
+  - `CodeDeployServiceRole`
+  - `AWSCodePipelineServiceRole`
+- S3 bucket for CodeBuild artifacts
+
+---
+
+### 2. Database Setup (MySQL)
+
+```sql
+CREATE DATABASE formdb;
+
+USE formdb;
+
+CREATE TABLE submissions (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(100),
+  email VARCHAR(100),
+  submitted_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+---
+
+✅ Ready to upload to GitHub  
+✅ Follows best practices  
+✅ Easy to modify and scale
+
+Let me know if you’d like:
+- PDF export  
+- A dark mode version  
+- A `Dockerfile` for container deployment  
+- The same app using Node.js backend
+
+I'm happy to help further!
+
 
 
 
