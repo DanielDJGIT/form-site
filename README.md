@@ -1,61 +1,39 @@
-## 📝 Form Filling Website (No Database) with AWS CI/CD
+# 🧾 Form Filling Website with AWS CI/CD and MySQL Database
 
-This is a simple, elegant form-filling web app built with **HTML, CSS, and PHP**, deployed using **AWS CI/CD services**. Submitted form data is processed by PHP and displayed back to the user — **no database is used**.
-
----
-
-## 🎯 Features
-
-- 📄 HTML form with modern CSS styling
-- ⚙️ PHP backend handles and displays submitted data
-- 🚀 CI/CD using:
-  - GitHub (source control)
-  - AWS CodePipeline
-  - AWS CodeBuild
-  - AWS CodeDeploy
-- 🌐 Hosted on Amazon EC2 with Apache
+This project is a simple HTML/PHP-based form filling website deployed on an EC2 instance using AWS CI/CD services: CodeCommit, CodeBuild, CodeDeploy, and CodePipeline. Submitted data is stored in a MySQL database on the same EC2 instance.
 
 ---
 
-## 📁 Project Structure
+## 🌐 Tech Stack
 
-
----
-
-## 💻 Demo
-
-- Visit: `http://<your-ec2-public-ip>/index.html`
-- Fill out your name and email
-- You'll see a confirmation message showing your submission
+- **Frontend**: HTML + CSS
+- **Backend**: PHP
+- **Database**: MySQL
+- **CI/CD**: AWS CodeCommit + CodeBuild + CodeDeploy + CodePipeline
+- **Server**: Apache (httpd)
+- **OS**: Amazon Linux 2 (EC2)
 
 ---
 
-## 💡 Technologies Used
-
-| Layer        | Stack                  |
-|--------------|------------------------|
-| Frontend     | HTML + CSS             |
-| Backend      | PHP (no DB)            |
-| Server       | Amazon EC2 (Apache)    |
-| CI/CD        | GitHub, CodePipeline, CodeBuild, CodeDeploy |
-| Infra        | S3 for artifacts       |
-
----
-
-## 🔧 AWS CI/CD Workflow
-
-1. **Push code** to GitHub
-2. **CodePipeline** detects changes and triggers build
-3. **CodeBuild** packages the files
-4. **S3** stores build artifacts
-5. **CodeDeploy** deploys artifacts to EC2
-6. Apache serves the application
-
----
-
-## 🧾 Sample:  Output
+🧾 Sample:  Output
 
 
 ![image](https://github.com/user-attachments/assets/ecda51e2-1a15-46e2-ba54-d7d846b89893)
 ![image](https://github.com/user-attachments/assets/ad2cf4a4-ff5b-496a-a58f-9cf71d80c391)
+
+## 📁 Project Structure
+
+```bash
+form-app/
+├── index.html          # Frontend form
+├── submit.php          # Handles form submission & DB insert
+├── style.css           # CSS styling
+├── scripts/            # Optional bash scripts for CodeDeploy
+│   ├── install_dependencies.sh
+│   └── start_server.sh
+├── appspec.yml         # CodeDeploy config
+└── buildspec.yml       # CodeBuild config```
+
+
+
 
